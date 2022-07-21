@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Ionic App</title>
-    <style>
-      *{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -158,7 +152,7 @@ input[type=textarea]{
   border-radius: 5px;
   width:100%;
   height: 80px;
-  text-align: left;
+  tex-align: left;
 }
 
 input[type=radio]{
@@ -210,98 +204,5 @@ input[type=radio]{
   height: 40px;
   cursor: pointer;
   filter: drop-shadow(0 5px 20px rgba(0,0,0, .1));
-  border-radius: 50%;
+  outline-radius: 50%;
 }
-    </style>
-    <script>
-      //showing the box modal
-function openModal(){
-  const open = document.getElementById("card");
-  open.style.display="flex";
-  open.style.width="300px";
-};
-
-//close the box modal
-function closeModal(){
-  const close = document.getElementById("card");
-  close.style.display="none";
-};
-    </script>
-
-    <base href="/" />
-
-    <meta name="color-scheme" content="light dark" />
-    
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
-  </head>
-
-  <body>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
-<!-- https://uidesigndaily.com/posts/sketch-feedback-modal-card-day-1265 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glassmorph || Modal Design</title>
-</head>
-<body>
-  <div class="circlebg">
-    <div class="circle circle-red"></div>
-    <div class="circle circle-green"></div>
-    <div class="circle circle-blue"></div>
-    <div class="circle circle-yellow"></div>
-  </div>
-  
-  
-  <div class="card" id="card">
-      <div class="heading">
-        <h1>Give feedback</h1>
-        <p>What do you think of this ui design?</p>
-        <ul class="icon">
-          <li><i class="far fa-sad-tear fa-lg"></i></li>
-          <li><i class="far fa-frown fa-lg"></i></li>
-          <li><i class="far fa-meh fa-lg"></i></li>
-          <li class="active"><i class="far fa-smile fa-lg icon-active"></i></li>
-          <li><i class="far fa-grin-tears fa-lg"></i></li>
-        </ul>
-      </div>
-
-      <div class="textarea">
-        <label for="textarea">Do you have any thoughts you'd like to share?</label>
-        <input type="textarea" id="textarea" placeholder="Type your words here..">
-      </div>
-
-      <div class="footer">
-        <p>May we follow you up on your feedback?</p>
-        <input type="radio" id="yes"  name="pilih" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="pilih" value="no">
-        <label for="no">No</label>
-      </div>
-
-      <div class="button">
-        <button>Send</button>
-        <button class="cancel-btn">Cancel</butto>
-      </div>
-      <button onclick="closeModal()" class="close">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-  <h1>Box Modal || Glassmorphism</h1>
-  <button class="open" onclick="openModal()">Show Me</button>
-</body>
-</html>
-
-  </body>
-
-</html>
